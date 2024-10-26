@@ -1,11 +1,14 @@
 import streamlit as st
-import matplotlib.pyplot as plt
+import plotly.express as px
 
 st.title("통계/분석")
 
+# 데이터 설정
 ratio = [34, 32, 16, 18]
 labels = ['Apple', 'Banana', 'Melon', 'Grapes']
 
-p = plt.pie(ratio, labels=labels, autopct='%.1f%%')
+# Plotly로 원형 차트 생성
+fig = px.pie(values=ratio, names=labels, title="과일 비율")
 
-st.plotly_chart(p)
+# Streamlit에 차트 표시
+st.plotly_chart(fig)
