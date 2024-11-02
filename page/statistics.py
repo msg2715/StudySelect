@@ -1,7 +1,8 @@
 import streamlit as st
 import plotly.express as px
+import sqlite3
 
-st.title("통계/분석")
+st.title("📈 통계/분석")
 
 # 데이터 설정
 ratio = [34, 32, 16, 18]

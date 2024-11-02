@@ -1,4 +1,5 @@
 import streamlit as st
+import sqlite3
 
 st.title("1학년 수강신청")
 

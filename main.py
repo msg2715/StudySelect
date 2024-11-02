@@ -1,5 +1,11 @@
 import streamlit as st
 
+
+st.set_page_config(
+    page_title = "매천고 수강신청",
+    page_icon = "🪜"
+)
+
 pages = {
     "로그인/회원가입" : [
         st.Page("page/login.py", title="로그인"),
