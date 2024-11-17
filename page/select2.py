@@ -1,6 +1,11 @@
 import streamlit as st
 import sqlite3
 
+if st.session_state.logged_in == False:
+    st.error("로그인 후 이용 가능합니다.")
+elif st.session_state.grade != 2:
+    st.error("해당 학년이 아닙니다.")
+
 st.title("2학년 수강신청")
 
 ###

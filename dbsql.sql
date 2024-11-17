@@ -11,8 +11,9 @@ usermail : 유저의 학교용 메일 주소
 */
 
 
+/*
 CREATE TABLE user(
-    userid INTEGER PRIMARY KEY AUTOINCREMENT,
+    userid TEXT NOT NULL UNIQUE,
     userpw TEXT NOT NULL,
     username TEXT NOT NULL,
     usergrade INTEGER NOT NULL,
@@ -20,6 +21,7 @@ CREATE TABLE user(
     usernumber INTEGER NOT NULL,
     usermail TEXT NOT NULL
 );
+*/
 
-INSERT INTO user (username, userpw, usergrade, userclass, usernumber, usermail)
-VALUES ('김민서', '1234', 2, 6, 5, '23-10205@maecheon.hs.kr');
+INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail)
+VALUES ('msg2715', '1234', '김민서', 2, 6, 5, '23-10205@maecheon.hs.kr');

@@ -1,15 +1,25 @@
 import streamlit as st
 
+# 세션 설정
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+    st.session_state.userid = None
+    st.session_state.grade = None
 
+
+# 타이틀 설정
 st.set_page_config(
     page_title = "매천고 수강신청",
-    page_icon = "🪜"
+    page_icon = "😎"
 )
 
+
+# 페이지 설정
 pages = {
     "로그인/회원가입" : [
         st.Page("page/login.py", title="로그인"),
         st.Page("page/signup.py", title="회원가입"),
+        st.Page("page/modify.py", title="회원정보수정"),
         st.Page("page/logout.py", title="로그아웃")
     ],
     "선택과목정보" : [
@@ -25,6 +35,13 @@ pages = {
     ]
 }
 
-
 pg = st.navigation(pages)
 pg.run()
+
+
+# 사이드바 설정
+if st.session_state.logged_in == True:
+    st.sidebar.write(f"{st.session_state.userid}님 환영합니다.")
+    st.sidebar.write(f"{st.session_state}")
+else:
+    st.sidebar.write("로그인이 되어있지 않습니다.")
