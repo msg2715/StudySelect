@@ -29,6 +29,7 @@ else:
             st.session_state.logged_in = True
             st.session_state.userid = id
             st.session_state.grade = row[3]
+            st.success("로그인 성공!")
         else:
             # 로그인 실패
-            st.error("로그인 실패!!")
+            st.error("아이디 또는 비밀번호를 다시 확인해주세요.")

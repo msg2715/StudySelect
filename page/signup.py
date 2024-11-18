@@ -21,10 +21,17 @@ if btn:
     cursor = conn.cursor()
     
     if pw == pw_check:
-        sql = f'''
-        INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail)
-        VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}')
-        '''
+        if grade == 1:
+            sql = f'''
+            INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail, choice)
+            VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}', '[False, False, False, False, False, False, False, False], [False, False, False, False], [False, False, False, False]')
+            '''
+        elif grade == 2:
+            sql = f'''
+            INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail, choice)
+            VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}', '[False, False], [False, False, False], [False, False, False], [False, False ,False, False], [False, False, False, False, False, False, False, False], [False, False, False, False, False, False], [False, False]')
+            '''
+            
         cursor.execute(sql)
         conn.commit()
         st.success("회원가입 성공!")

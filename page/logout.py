@@ -7,4 +7,4 @@ else:
     st.session_state.logged_in = False
     st.session_state.userid = None
     st.session_state.grade = None
-    st.write("로그아웃 성공")
+    st.success("로그아웃 성공")

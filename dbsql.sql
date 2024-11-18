@@ -11,7 +11,7 @@ usermail : 유저의 학교용 메일 주소
 */
 
 
-/*
+
 CREATE TABLE user(
     userid TEXT NOT NULL UNIQUE,
     userpw TEXT NOT NULL,
@@ -19,9 +19,17 @@ CREATE TABLE user(
     usergrade INTEGER NOT NULL,
     userclass INTEGER NOT NULL,
     usernumber INTEGER NOT NULL,
-    usermail TEXT NOT NULL
+    usermail TEXT NOT NULL,
+    choice JSON
 );
-*/
 
-INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail)
-VALUES ('msg2715', '1234', '김민서', 2, 6, 5, '23-10205@maecheon.hs.kr');
+
+
+INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail, choice)
+VALUES ('msg', '1234', '김민서', 2, 6, 5, '23-10205@maecheon.hs.kr', '[False, False], [False, False, False], [False, False, False], [False, False ,False, False], [False, False, False, False, False, False, False, False], [False, False, False, False, False, False], [False, False]');
+
+
+
+/*
+DROP TABLE user;
+*/
