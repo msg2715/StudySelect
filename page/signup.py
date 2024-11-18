@@ -24,12 +24,12 @@ if btn:
         if grade == 1:
             sql = f'''
             INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail, choice)
-            VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}', '[False, False, False, False, False, False, False, False], [False, False, False, False], [False, False, False, False]')
+            VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}', '[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]')
             '''
         elif grade == 2:
             sql = f'''
             INSERT INTO user (userid, userpw, username, usergrade, userclass, usernumber, usermail, choice)
-            VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}', '[False, False], [False, False, False], [False, False, False], [False, False ,False, False], [False, False, False, False, False, False, False, False], [False, False, False, False, False, False], [False, False]')
+            VALUES ('{id}', '{pw}', '{name}', {grade}, {userclass}, {number}, '{mail}', '[0, 0], [0, 0, 0], [0, 0, 0], [0, 0 ,0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0]')
             '''
             
         cursor.execute(sql)

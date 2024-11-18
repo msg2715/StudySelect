@@ -77,13 +77,13 @@ else:
     
     
     if btn:
-        a = [a_1, a_2]
-        b = [b_1, b_2, b_3]
-        c = [c_1, c_2, c_3]
-        d = [d_1, d_2, d_3, d_4]
-        e = [e_1, e_2, e_3, e_4, e_5, e_6, e_7, e_8]
-        f = [f_1, f_2, f_3, f_4, f_5, f_6]
-        g = [g_1, g_2]
+        a = list(map(int, [a_1, a_2]))
+        b = list(map(int, [b_1, b_2, b_3]))
+        c = list(map(int, [c_1, c_2, c_3]))
+        d = list(map(int, [d_1, d_2, d_3, d_4]))
+        e = list(map(int, [e_1, e_2, e_3, e_4, e_5, e_6, e_7, e_8]))
+        f = list(map(int, [f_1, f_2, f_3, f_4, f_5, f_6]))
+        g = list(map(int, [g_1, g_2]))
         
         if sum(a) != 1:
             st.error("선택군1에서 1개의 과목을 골라주세요.")

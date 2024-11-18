@@ -45,9 +45,9 @@ else:
     
     
     if btn:
-        a = [a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8]
-        b = [b_1, b_2, b_3, b_4]
-        c = [c_1, c_2, c_3, c_4]
+        a = list(map(int, [a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8]))
+        b = list(map(int, [b_1, b_2, b_3, b_4]))
+        c = list(map(int, [c_1, c_2, c_3, c_4]))
         
         print(a, b, c)
         
