@@ -1,6 +1,7 @@
 import streamlit as st
 import plotly.express as px
 import sqlite3
+import numpy as np
 
 conn = sqlite3.connect('db.db')
 cursor = conn.cursor()
@@ -10,11 +11,15 @@ cursor = conn.cursor()
 cursor.execute(f"SELECT choice FROM user WHERE usergrade=1")
 row = cursor.fetchall()
 
-for i in row:
-    print(eval(i[0]))
-    
-# 데이터들을 합치는 코드 작성해야함,, :
+result = [] # np.array([[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
 
+for i in row:
+    choice = eval(i[0])
+    print(type(choice))
+    print(choice)
+    # result = result + choice
+
+print(result)
 
 
 
