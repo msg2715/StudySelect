@@ -33,26 +33,26 @@ c_1 = st.expander("심화국어")
 c_1.image("img/심화국어.jpg")
 
 c_2 = st.expander("심화 영어 독해1")
-# c_2.image("img/심화영어독해1.jpg") # 추가예정
+c_2.write("심화 영어 독해1")
 
 c_3 = st.expander("심화 수학1")
-# c_3.image("img/심화수학1.jpg") # 추가예정
+c_3.write("심화 수학1")
 
 ###
 
 st.write("선택군4")
 
 d_1 = st.expander("고전문학 감상")
-# d_1.image("img/고전문학감상.jpg") # 추가예정
+d_1.write("고전문학 감상")
 
 d_2 = st.expander("심화 영어 독해2")
-# d_2.image("img/심화영어독해2.jpg") # 추가예정
+d_2.write("심화 영어 독해2") 
 
 d_3 = st.expander("수학적 사고와 적분")
-d_3.write("수학적 사고와 적분") # 이미지가 없어서 글로 적자
+d_3.write("수학적 사고와 적분")
 
 d_4 = st.expander("수학적 사고와 통계")
-d_4.write("수학적 사고와 통계") # 이미지가 없어서 글로 적자
+d_4.write("수학적 사고와 통계")
 
 ###
 
@@ -102,7 +102,7 @@ f_5 = st.expander("융합과학")
 f_5.image("img/융합과학.jpg")
 
 f_6 = st.expander("자료구조")
-f_6.write("자료구조") # 이미지가 없어서 글로 적자
+f_6.write("자료구조")
 
 ###
 

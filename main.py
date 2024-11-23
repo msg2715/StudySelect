@@ -32,6 +32,9 @@ pages = {
     ],
     "통계/분석" : [
         st.Page("page/statistics.py", title="선택과목 신청현황 및 분석"),
+    ],
+    "회원탈퇴" : [
+        st.Page("page/account_deletion.py", title="회원탈퇴"),
     ]
 }
 
@@ -42,6 +45,5 @@ pg.run()
 # 사이드바 설정
 if st.session_state.logged_in == True:
     st.sidebar.write(f"{st.session_state.userid}님 환영합니다.")
-    st.sidebar.write(f"{st.session_state}")
 else:
     st.sidebar.write("로그인이 되어있지 않습니다.")

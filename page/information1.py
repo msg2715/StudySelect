@@ -42,13 +42,13 @@ b_3 = st.expander("확률과 통계")
 b_3.image("img/확률과통계.jpg")
 
 b_4 = st.expander("프로그래밍")
-b_4.write("프로그래밍") # 이미지가 없어서 글로 적자
+b_4.write("프로그래밍")
 
 
 st.write("선택군3")
 
 c_1 = st.expander("현대문학 감상")
-c_1.image("img/정치와법.jpg") # 추가예정
+c_1.write("현대문학 감상")
 
 c_2 = st.expander("영어권 문화")
 c_2.image("img/영어권문화.jpg")
@@ -57,4 +57,4 @@ c_3 = st.expander("기하")
 c_3.image("img/기하.jpg")
 
 c_4 = st.expander("빅데이터 분석")
-c_4.image("img/정치와법.jpg") # 추가예정
+c_4.write("빅데이터 분석")
